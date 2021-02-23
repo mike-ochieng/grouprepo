@@ -1,0 +1,186 @@
+html {
+  font-family: 'Times New Roman', serif;;
+
+  --clr-light:white;
+  --clr-dark: black;
+  --clr-acc: aqua;
+
+   --fs-h1: 4.2rem; display: inline-block;
+    --fs-h2: 3.8rem; 
+    --fs-h3: 1.5rem;
+    --fs-body: 1.5rem;
+}
+
+header {
+  display: inline-block;
+  font-family: 'Times New Roman'; 
+  font-size: 25px; 
+  background-color: aqua;
+  width: 100%;
+}
+
+body { 
+  margin: 0;
+  font-family: var(--ff-primary);
+  font-size: var(--fs-body);
+} 
+ 
+.button {
+
+  padding: 0.5em;
+  background: var(--clr-light);
+  color: var(--clr-dark);
+  text-decoration: none;
+  
+  font-size: 1rem;
+  font-weight: var(--fw-bold);
+  letter-spacing: 2px;
+}
+
+.button:hover {
+  background-color: silver;
+}
+
+img{
+  display: block;
+  max-width: 100%;
+}
+img:hover{
+     transform: scale(1.02);  
+}
+
+section{
+   padding: 1em 2em;
+}
+
+.mynav_link:hover{
+  background-color: turquoise; 
+}
+
+h1, h2, h3 {
+  line-height: 1;
+  margin: 0;
+}
+
+
+h1{font-size: var(--fs-h1);}
+h2{font-size: var(--fs-h2);}
+h3{font-size: var(--fs-h3);}
+
+
+
+.sectitle_intro{
+  font-weight: var(--fw-reg);
+}
+
+
+
+/*style my services section*/
+
+.myskills {
+  background-color: aqua;
+  color: black;
+  text-align: center;
+}
+
+ 
+/*Styling the bio*/
+
+@media (min-width:700px){
+.bio {
+  max-width: 1000px;
+  margin: 0 auto;
+  display: grid;
+      grid-template-columns: 1fr 200px;
+      grid-template-areas: 
+      "title image"
+      "subtitle image"
+      "text image";
+      grid-column-gap: 1em;
+}
+
+
+.sectitle_bio {
+       grid-area: title;
+    }
+
+.secsubtitle_bio {
+      grid-row: 3;
+    }
+
+.bio_img {
+      grid-area: image;
+      height: 200px;
+      width: 800px;
+    }
+
+.bio_img:hover{
+  transform: scale(1.02);  
+}
+  
+
+/*Styling my projects*/
+
+.myprojects {
+     background-color: aqua;
+     color: black;
+     text-align: center;
+  }
+
+  .mywork{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(420px, 8fr));
+  }
+
+  .workpiece_img {
+    height: 400px;
+    width: 800px;
+    padding: .2rem;
+  }
+
+  .workpiece_img:hover{
+    transform: scale(1.02);  
+  }
+
+
+.socialitem {
+  display: block;
+  margin: 0.8em;
+}
+.socialitem_link{
+  padding: .2em;
+}
+.socialitemlink:hover{
+  opacity: 50%;
+  background-color:white;
+}
+
+.social_links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 2em 0;
+  padding: 0;
+}
+
+/*styling the footer*/
+
+.footer {
+  background: white;
+  text-align: center;
+  padding: 2.5em 0; 
+}
+
+.footer a {
+  color: black;
+  text-decoration: none;
+}
+
+
+.footer_link:hover{
+   opacity: 50%;
+   background-color: white;
+}
+
+
+
